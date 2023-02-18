@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap" rel="stylesheet">
+
     <style>
         body{
             margin: 0;
@@ -33,9 +34,6 @@
         }
         .darkblue{
             background: #001220;
-        }
-        .pink{
-            background: #F16F6F;
         }
         .yellow{
          background: #FFCE45;
@@ -78,7 +76,7 @@
             position: absolute;
             bottom: 0;
             height: 85%;
-            width: 100%;
+            width: 170%;
             background-color: #F16F6F;
             z-index: -1;
         }
@@ -94,7 +92,7 @@
         .wave svg {
             position: relative;
             display: block;
-            width: calc(110% + 1.3px);
+            width: calc(110% + 1px);
             height: 212px;
         }
 
@@ -111,7 +109,15 @@
         .layer1 {
             background-image: url("stlzd.svg");
         }
-
+        .layer2{
+            background-image: url("wave2.svg");
+        }
+        .layer3{
+            background-image: url("wave3.svg");
+        }
+        .flip{
+            transform: rotate(180deg);
+}
 
     </style>
 
@@ -157,23 +163,28 @@
     <p>Aliquam amet et fuga nostrum possimus tempora! Dolorum earum facere fugiat id, in, ipsa iste, libero maxime
         minima molestias nostrum nulla pariatur quae quo repellendus vero voluptas voluptate voluptatum? Quas.</p>
 </section>
+<div class="spacer layer2"></div>
 <section class="yellow">
     <h1>Nice Curves</h1>
     <p>Aliquam autem doloribus itaque iure iusto minus nemo porro praesentium quibusdam, veniam. Laudantium, neque,
         veritatis! Aliquid, debitis doloremque eaque eligendi enim, non officia officiis quaerat quasi reprehenderit
         soluta sunt, voluptatibus?</p>
 </section>
+<div class="spacer layer3"></div>
 <section>
     <h1>Nice Curves</h1>
     <p>Adipisci aperiam at culpa deserunt doloremque et eveniet facere fuga iure, magni modi molestiae mollitia nam
         nostrum odit officia placeat quaerat quisquam, quos sequi sint suscipit totam ut veritatis voluptatibus!</p>
 </section>
+<div class="spacer layer4 flip"></div>
 <section class="red">
     <h1>Nice Curves</h1>
-    <p>Beatae culpa deleniti inventore nisi non nulla quas totam? Amet atque consequatur corporis deleniti dicta
+    <p> Beatae culpa deleniti inventore nisi non nulla quas totam? Amet atque consequatur corporis deleniti dicta
         dignissimos earum eveniet fugit labore natus, nesciunt placeat possimus recusandae rem rerum sit voluptatem
-        voluptates!</p>
+        voluptates!
+    </p>
 </section>
+<div class="spacer layer4"></div>
 
 </body>
 </html>
